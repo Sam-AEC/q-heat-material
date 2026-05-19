@@ -1,0 +1,647 @@
+{
+  "timestamp": "2026-05-19T22:32:48.584027",
+  "experiment": "qheat_facade_material_qpu_benchmark",
+  "material_hypothesis": {
+    "name": "Q-HEAT",
+    "expanded_name": "Quantum-screened High-Entropy Aerogel Thermal facade coating",
+    "candidate_architecture": [
+      "porous high-entropy ceramic/aerogel insulation matrix",
+      "sparse correlated transition-metal dopant-pair centers",
+      "targeted mid-IR emissivity and solar-thermal response tuning"
+    ],
+    "claim_boundary": "new material hypothesis only; not synthesized or validated"
+  },
+  "screen": {
+    "rows": [
+      {
+        "name": "v_w_entropy_center",
+        "label": "V-W entropy-screened center",
+        "design_hypothesis": "V-W dopant pair in high-entropy aluminosilicate aerogel matrix",
+        "parameters": {
+          "t": 0.78,
+          "U": 2.7,
+          "delta": 0.18,
+          "mu": 0.0
+        },
+        "exact_energy": -0.7851751397,
+        "vqe_energy": -0.7843534877,
+        "vqe_abs_error": 0.000821652,
+        "exact_observables": {
+          "double_occupancy": 0.0,
+          "charge_imbalance": -0.114624108,
+          "bond_order": 0.9934089359,
+          "qheat_proxy_score": 0.9364746293
+        },
+        "vqe_observables": {
+          "double_occupancy": 0.0001290422,
+          "charge_imbalance": -0.1069369258,
+          "bond_order": 0.9941358877,
+          "qheat_proxy_score": 0.9408595593
+        },
+        "vqe": {
+          "energy": -0.7843534876983899,
+          "params": [
+            1.6294099959,
+            -0.0733436843,
+            -0.0585444979,
+            1.2112257239,
+            0.071242033,
+            -0.6434753627,
+            1.6690767852,
+            0.3536215681,
+            -0.9886644243,
+            0.6376600463,
+            -0.4576175808,
+            1.6111216258
+          ],
+          "history_best": [
+            2.61,
+            -0.7843534877,
+            -0.7843534877,
+            -0.7843534877,
+            -0.7843534877,
+            -0.7843534877
+          ],
+          "n_params": 12,
+          "reps": 2,
+          "optimizer": "COBYLA"
+        },
+        "hamiltonian_terms": [
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.39
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.39
+          },
+          {
+            "pauli": "XZXI",
+            "coefficient": -0.39
+          },
+          {
+            "pauli": "YZYI",
+            "coefficient": -0.39
+          },
+          {
+            "pauli": "IIII",
+            "coefficient": 1.35
+          },
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.675
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.63
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.63
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.675
+          }
+        ],
+        "top_measurement_terms": [
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.675
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.675
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.63
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.63
+          },
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.39
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.39
+          }
+        ],
+        "ansatz_stats": {
+          "n_qubits": 4,
+          "depth": 12,
+          "n_gates": 22,
+          "n_two_qubit_gates": 8,
+          "gate_counts": {
+            "x": 2,
+            "ry": 12,
+            "cx": 8
+          },
+          "n_parameters": 12
+        }
+      },
+      {
+        "name": "v_nb_balanced_center",
+        "label": "V-Nb balanced emissivity center",
+        "design_hypothesis": "V-Nb pair designed to preserve delocalization while adding defect scattering",
+        "parameters": {
+          "t": 0.92,
+          "U": 2.95,
+          "delta": 0.08,
+          "mu": 0.0
+        },
+        "exact_energy": -0.9208691547,
+        "vqe_energy": -0.9206076248,
+        "vqe_abs_error": 0.0002615299,
+        "exact_observables": {
+          "double_occupancy": 0.0,
+          "charge_imbalance": -0.0434372243,
+          "bond_order": 0.9990561584,
+          "qheat_proxy_score": 0.9773580451
+        },
+        "vqe_observables": {
+          "double_occupancy": 8.41082e-05,
+          "charge_imbalance": -0.0370849896,
+          "bond_order": 0.9995874602,
+          "qheat_proxy_score": 0.9809701073
+        },
+        "vqe": {
+          "energy": -0.920607624800533,
+          "params": [
+            2.6206906833,
+            -1.5485791709,
+            0.0374968683,
+            1.5563027576,
+            -1.0853497034,
+            -1.9482571616,
+            -1.9509491241,
+            1.1519053285,
+            2.7606068197,
+            -1.5943880104,
+            0.3700420424,
+            0.4442854942
+          ],
+          "history_best": [
+            2.91,
+            -0.9182881145,
+            -0.9199106317,
+            -0.9199106317,
+            -0.9199106317,
+            -0.9206076248
+          ],
+          "n_params": 12,
+          "reps": 2,
+          "optimizer": "COBYLA"
+        },
+        "hamiltonian_terms": [
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.46
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.46
+          },
+          {
+            "pauli": "XZXI",
+            "coefficient": -0.46
+          },
+          {
+            "pauli": "YZYI",
+            "coefficient": -0.46
+          },
+          {
+            "pauli": "IIII",
+            "coefficient": 1.475
+          },
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.7375
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.7175
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.7175
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.7375
+          }
+        ],
+        "top_measurement_terms": [
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.7375
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.7375
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.7175
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.7175
+          },
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.46
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.46
+          }
+        ],
+        "ansatz_stats": {
+          "n_qubits": 4,
+          "depth": 12,
+          "n_gates": 22,
+          "n_two_qubit_gates": 8,
+          "gate_counts": {
+            "x": 2,
+            "ry": 12,
+            "cx": 8
+          },
+          "n_parameters": 12
+        }
+      },
+      {
+        "name": "cr_w_fire_stable_center",
+        "label": "Cr-W fire-stable absorber center",
+        "design_hypothesis": "Cr-W pair emphasizes oxidation and fire stability over switching amplitude",
+        "parameters": {
+          "t": 0.66,
+          "U": 3.35,
+          "delta": 0.32,
+          "mu": 0.0
+        },
+        "exact_energy": -0.6791170739,
+        "vqe_energy": -0.6788610814,
+        "vqe_abs_error": 0.0002559925,
+        "exact_observables": {
+          "double_occupancy": 0.0,
+          "charge_imbalance": -0.2356000256,
+          "bond_order": 0.9718501057,
+          "qheat_proxy_score": 0.8573661508
+        },
+        "vqe_observables": {
+          "double_occupancy": 2.15533e-05,
+          "charge_imbalance": -0.2358630053,
+          "bond_order": 0.9716172847,
+          "qheat_proxy_score": 0.8570145268
+        },
+        "vqe": {
+          "energy": -0.6788610814026509,
+          "params": [
+            1.8090261072,
+            -3.1424900602,
+            -3.1660785214,
+            2.5051634002,
+            -3.1191304201,
+            -3.1300615305,
+            3.3265800296,
+            2.359599946,
+            3.1541039607,
+            3.1204244437,
+            3.311039847,
+            -1.4131845005
+          ],
+          "history_best": [
+            3.19,
+            -0.6738692752,
+            -0.6774837281,
+            -0.6774837281,
+            -0.6788610814,
+            -0.6788610814
+          ],
+          "n_params": 12,
+          "reps": 2,
+          "optimizer": "COBYLA"
+        },
+        "hamiltonian_terms": [
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.33
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.33
+          },
+          {
+            "pauli": "XZXI",
+            "coefficient": -0.33
+          },
+          {
+            "pauli": "YZYI",
+            "coefficient": -0.33
+          },
+          {
+            "pauli": "IIII",
+            "coefficient": 1.675
+          },
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.9175
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.9175
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.8375
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.8375
+          }
+        ],
+        "top_measurement_terms": [
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.9175
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.9175
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.8375
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.8375
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.7575
+          },
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.33
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.33
+          }
+        ],
+        "ansatz_stats": {
+          "n_qubits": 4,
+          "depth": 12,
+          "n_gates": 22,
+          "n_two_qubit_gates": 8,
+          "gate_counts": {
+            "x": 2,
+            "ry": 12,
+            "cx": 8
+          },
+          "n_parameters": 12
+        }
+      },
+      {
+        "name": "ti_v_control_center",
+        "label": "Ti-V low-cost control center",
+        "design_hypothesis": "Ti-V lower-cost control pair for facade-scale manufacturability",
+        "parameters": {
+          "t": 1.05,
+          "U": 3.1,
+          "delta": 0.22,
+          "mu": 0.0
+        },
+        "exact_energy": -1.0624421244,
+        "vqe_energy": -1.055421203,
+        "vqe_abs_error": 0.0070209214,
+        "exact_observables": {
+          "double_occupancy": 0.1021246382,
+          "charge_imbalance": -0.0430609374,
+          "bond_order": 1.6103601698,
+          "qheat_proxy_score": 1.4296825476
+        },
+        "vqe_observables": {
+          "double_occupancy": 2.42855e-05,
+          "charge_imbalance": -0.0981348991,
+          "bond_order": 0.9950256518,
+          "qheat_proxy_score": 0.9461793023
+        },
+        "vqe": {
+          "energy": -1.055421202957704,
+          "params": [
+            2.3522267149,
+            -1.4673531918,
+            0.0097659694,
+            1.4777029044,
+            -0.7905856943,
+            -1.3843083755,
+            -1.375515271,
+            0.7489220259,
+            1.6022840711,
+            -1.5558982285,
+            1.4426495191,
+            0.828767692
+          ],
+          "history_best": [
+            2.99,
+            -1.053816907,
+            -1.0549919383,
+            -1.0549919383,
+            -1.0549919383,
+            -1.055421203
+          ],
+          "n_params": 12,
+          "reps": 2,
+          "optimizer": "COBYLA"
+        },
+        "hamiltonian_terms": [
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.525
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.525
+          },
+          {
+            "pauli": "XZXI",
+            "coefficient": -0.525
+          },
+          {
+            "pauli": "YZYI",
+            "coefficient": -0.525
+          },
+          {
+            "pauli": "IIII",
+            "coefficient": 1.55
+          },
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.83
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.83
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.775
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.775
+          }
+        ],
+        "top_measurement_terms": [
+          {
+            "pauli": "IIIZ",
+            "coefficient": -0.83
+          },
+          {
+            "pauli": "IIZI",
+            "coefficient": -0.83
+          },
+          {
+            "pauli": "IIZZ",
+            "coefficient": 0.775
+          },
+          {
+            "pauli": "ZZII",
+            "coefficient": 0.775
+          },
+          {
+            "pauli": "IZII",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "ZIII",
+            "coefficient": -0.72
+          },
+          {
+            "pauli": "IXZX",
+            "coefficient": -0.525
+          },
+          {
+            "pauli": "IYZY",
+            "coefficient": -0.525
+          }
+        ],
+        "ansatz_stats": {
+          "n_qubits": 4,
+          "depth": 12,
+          "n_gates": 22,
+          "n_two_qubit_gates": 8,
+          "gate_counts": {
+            "x": 2,
+            "ry": 12,
+            "cx": 8
+          },
+          "n_parameters": 12
+        }
+      }
+    ],
+    "ranked_candidates": [
+      {
+        "rank": 1,
+        "name": "ti_v_control_center",
+        "label": "Ti-V low-cost control center",
+        "qheat_proxy_score": 1.4296825476,
+        "design_hypothesis": "Ti-V lower-cost control pair for facade-scale manufacturability"
+      },
+      {
+        "rank": 2,
+        "name": "v_nb_balanced_center",
+        "label": "V-Nb balanced emissivity center",
+        "qheat_proxy_score": 0.9773580451,
+        "design_hypothesis": "V-Nb pair designed to preserve delocalization while adding defect scattering"
+      },
+      {
+        "rank": 3,
+        "name": "v_w_entropy_center",
+        "label": "V-W entropy-screened center",
+        "qheat_proxy_score": 0.9364746293,
+        "design_hypothesis": "V-W dopant pair in high-entropy aluminosilicate aerogel matrix"
+      },
+      {
+        "rank": 4,
+        "name": "cr_w_fire_stable_center",
+        "label": "Cr-W fire-stable absorber center",
+        "qheat_proxy_score": 0.8573661508,
+        "design_hypothesis": "Cr-W pair emphasizes oxidation and fire stability over switching amplitude"
+      }
+    ]
+  },
+  "azure_qpu": {
+    "requested_target": "quantinuum.qpu.h2-1",
+    "shots": 100,
+    "max_terms": 8,
+    "target_snapshot": {
+      "succeeded": false,
+      "targets": [],
+      "qpu_targets": [],
+      "error": "[WinError 2] The system cannot find the file specified"
+    },
+    "submitted": false,
+    "succeeded": false,
+    "reason": "local_mode_target_check_only",
+    "jobs": []
+  }
+}

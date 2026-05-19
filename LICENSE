@@ -1,0 +1,62 @@
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+[Full Apache 2.0 text — see https://www.apache.org/licenses/LICENSE-2.0.txt]
+
+Copyright 2026 Sam Mohammad
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ADDITIONAL INTELLECTUAL PROPERTY NOTICE
+(Supplemental to Apache 2.0 — not a modification of its terms)
+
+The material concept described in this repository — hereinafter referred
+to as "Q-HEAT" (Quantum-screened High-Entropy Aerogel Thermal facade
+coating) — including but not limited to:
+
+  (i)  the concept of embedding correlated transition-metal dopant-pair
+       centers into a porous high-entropy ceramic/aerogel insulation matrix
+       for the purpose of tuning mid-infrared emissivity and solar-thermal
+       response of building facade systems;
+
+  (ii) the specific four-qubit reduced active-space electronic model
+       formulation for dopant-pair motif screening in facade materials;
+
+  (iii) the Q-HEAT proxy scoring methodology for ranking dopant-pair
+        electronic motifs based on bond order, double occupancy, and
+        charge imbalance;
+
+is the original invention of:
+
+    Sam Mohammad
+    sammohammadwork@gmail.com
+    First public disclosure: 2026-05-20 (GitHub commit timestamp)
+
+This public disclosure constitutes DEFENSIVE PUBLICATION and establishes
+prior art under 35 U.S.C. § 102 (US) and equivalent statutes globally.
+
+Nothing in the Apache 2.0 license grants any rights to this material
+concept beyond what is expressly granted. The software license covers
+the code implementation only.
+
+A provisional patent application on the Q-HEAT material concept and
+its quantum simulation methodology is being prepared. All rights
+reserved on the material concept pending patent filing.
+
+TRADEMARK NOTICE: "Q-HEAT" is a trademark claimed by Sam Mohammad.
+Unauthorized commercial use of the Q-HEAT name or logo is prohibited.

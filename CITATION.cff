@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: "Mohammad"
+    given-names: "Sam"
+    email: "sammohammadwork@gmail.com"
+title: "Q-HEAT: Quantum-screened High-Entropy Aerogel Thermal Facade Coating — A Material Hypothesis and QPU Benchmark"
+version: "1.0.0"
+date-released: "2026-05-20"
+url: "https://github.com/Sam-AEC/q-heat-material"
+license: "Apache-2.0"
+keywords:
+  - quantum computing
+  - quantum simulation
+  - materials science
+  - building facades
+  - Hubbard model
+  - VQE
+  - Azure Quantum
+  - Quantinuum
+  - high-entropy materials
+  - correlated electrons
+  - thermal management
+abstract: >
+  Q-HEAT (Quantum-screened High-Entropy Aerogel Thermal facade coating) is a new material
+  hypothesis combining a porous high-entropy ceramic/aerogel insulation matrix with correlated
+  transition-metal dopant-pair centers for dynamically tunable mid-infrared emissivity. This
+  repository reduces the central electronic subproblem to a four-qubit correlated Hubbard dimer,
+  benchmarks four candidate dopant-pair motifs using exact diagonalization and VQE, and submits
+  Pauli-term measurement circuits to Azure Quantum (Quantinuum H2-1e and H2-1sc). This constitutes
+  a defensive publication establishing prior art dated 2026-05-20.
+references:
+  - type: software
+    title: "Qiskit"
+    url: "https://qiskit.org"
+  - type: software
+    title: "Azure Quantum"
+    url: "https://azure.microsoft.com/en-us/products/quantum/"
+  - type: article
+    title: "Quantum simulation of chemistry with sublinear scaling in basis size"
+    authors:
+      - family-names: "Babbush"
+        given-names: "Ryan"
+    journal: "npj Quantum Information"
+    year: 2019
