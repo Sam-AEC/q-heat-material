@@ -81,9 +81,13 @@ The **high-entropy aerogel host** draws from the established field of high-entro
 
 The **dopant-pair centers** are the novel element. Sparse correlated transition-metal dimers embedded within the HEA matrix are hypothesized to exhibit a metal-insulator crossover that is tunable by the chemical identity of the dopant pair, the local coordination geometry imposed by the HEA host, and the carrier density via surface or interface charging. This tunable crossover would manifest as a mid-IR emissivity switch, allowing the building facade to regulate its own radiative heat loss as a function of temperature, incident radiation, or external bias.
 
-### Why This Is New
+### Prior Art Position
 
-A structured literature search conducted in May 2026 did not identify any prior work proposing correlated transition-metal dopant-pair dimers in a high-entropy aerogel matrix specifically for building facade thermal management, nor any QPU-based screening methodology for this class of material. The combination of HEA insulation host, correlated dopant pair, and QPU screening constitutes a new material hypothesis.
+The individual constituents of Q-HEAT are each well-precedented. High-entropy ceramics have been studied extensively for their thermodynamic phase stability, correlated Hubbard dimers are a textbook model in condensed matter physics, and variational quantum algorithms have been applied to molecular electronic structure since 2014. What does not appear in the literature, to the best of the author's knowledge as of May 2026, is the synthesis of these three elements into a single design framework targeting building facade thermal management.
+
+Prior work on thermochromic coatings has focused almost entirely on bulk VO₂ films and their doped variants, where the switching mechanism relies on a first-order structural phase transition sensitive to stoichiometric disorder. The proposal here is qualitatively different: rather than engineering a bulk phase transition, Q-HEAT targets site-pair quantum correlations within a chemically disordered high-entropy host, making the active layer intrinsically tolerant to the compositional variation that destroys bulk switching in conventional thermochromic materials.
+
+The QPU screening methodology is similarly without direct precedent in the facade materials literature. Electronic structure benchmarks of correlated transition-metal systems on quantum hardware have appeared in the quantum chemistry context, but their application to the specific problem of dopant-pair motif selection for adaptive thermal coatings has not been reported.
 
 ---
 
