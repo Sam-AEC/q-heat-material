@@ -1,0 +1,25 @@
+name: OSV scan
+on:
+  pull_request:
+  push:
+    branches: ['**']
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    if: github.event_name != 'push' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    concurrency:
+      group: osv-scan-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: google/osv-scanner-action/osv-scanner-action@32d3cd482bdadfb38b186c0ad1b031902d55d932 # v2.7.1
+        with:
+          scan-args: |-
+            -r
+            --skip-git
+            ./
